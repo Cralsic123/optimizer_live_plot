@@ -99,7 +99,7 @@ def rmsprop(objective, derivative, bounds, n_iter, step_size, rho):
  # calculate the new position in this variable
                 value = x[i] - alpha * gradient[j]
                 new_solution.append(value)# store the new solution
-        solution = np.asarray(new_solution)
+                solution = np.asarray(new_solution)
         solutions.append(solution)
  # evaluate candidate point
         solution_eval = objective(solution[0], solution[1])# report progress
